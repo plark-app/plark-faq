@@ -1,12 +1,35 @@
-function listFAQ(key) {
-    return [];
+function loadFAQFiles(dir) {
+    let stat = fs.lstatSync(dir);
+    if (!stat.isDirectory()) {
+        return [];
+    } else {
+        const files = fs.readdirSync(dir);
+        let f, l = files.length;
+
+        const response = [];
+
+        for (let i = 0; i < l; i++) {
+            f = path.join(path, files[i]);
+            const c = fs.readFileSync(f, 'utf-8');
+            response.push(c);
+        }
+
+        return response;
+    }
 }
 
-function parceFAQItem(content) {
+function listFAQ(key) {
+    return loadFAQFiles(key ? './' + key : './faq');
+}
+
+function parseFAQItem(content) {
     return {
         title: "How to Mine wallet",
-        content: "How to be **cooler**"
+        content: content || "How to be **cooler**"
     };
 }
 
-export.default = { listFAQ: listFAQ, parceFAQItem: parceFAQItem };
+module.exports = {
+    listFAQ: listFAQ,
+    parceFAQItem: parceFAQItem
+};

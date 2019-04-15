@@ -1,6 +1,7 @@
 {
     "name": "plark-faq",
+    "private": false,
     "version": "1.0.0",
     "main": "index.js",
-    "types": "index.ts"
+    "types": "index.d.ts"
 }
