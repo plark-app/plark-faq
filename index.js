@@ -22,10 +22,23 @@ function listFAQ(key) {
     return loadFAQFiles(key ? './' + key : './faq');
 }
 
-function parseFAQItem(content) {
+function parseFAQItem(baseContent) {
+    if (Buffer.isBuffer(baseContent)) {
+        baseContent = baseContent.toString();
+    }
+
+    const re = /^#\s?(.*)/m;
+    const title = re.exec(baseContent)[1] || undefined;
+
+    let lines = baseContent.split('\n');
+    // remove one line, starting at the first position
+    lines.splice(0, 1);
+    // join the array back into a single string
+    let content = lines.join('\n');
+
     return {
-        title: "How to Mine wallet",
-        content: content || "How to be **cooler**"
+        title: title,
+        content: content.trim(),
     };
 }
 

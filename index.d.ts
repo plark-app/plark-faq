@@ -1,14 +1,8 @@
-type FAQItem = {
+export type FAQItem = {
     title: string;
     content: string;
 };
 
-interface PlarkFAQ {
-    listFAQ(key?: string): string[];
+export function parseFAQItem(content: string): FAQItem;
 
-    parseFAQItem(content: string): FAQItem;
-}
-
-declare const PlarkFAQ: PlarkFAQ;
-
-export default PlarkFAQ;
+export function listFAQ(key?: string): string[];
