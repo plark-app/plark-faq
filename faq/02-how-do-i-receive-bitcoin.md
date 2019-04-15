@@ -9,7 +9,7 @@ If you would like to receive bitcoin from someone, you will need to give them yo
 - Press the "Share" button under the QR code to send them your address via email or text message.
 - Tap the QR code to copy your address to your device's memory. You can now paste your address into a website or other app.
   
-You can also request for a specific amount by using the Request an Amount option. Visit this [page](https://brd.com/support/articles/115001714994)for information on how to use this.
+You can also request for a specific amount by using the Request an Amount option.
   
 The bitcoin address shown on your receive address will change every time you receive money, but old addresses will continue to work.
   
