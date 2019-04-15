@@ -31,5 +31,5 @@ function parseFAQItem(content) {
 
 module.exports = {
     listFAQ: listFAQ,
-    parceFAQItem: parceFAQItem
+    parseFAQItem: parseFAQItem
 };
