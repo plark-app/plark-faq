@@ -1,14 +1,18 @@
 # What is Backup Phrase?
 
-A Backup Phrase consists of 12 randomly generated words. The app creates the Backup Phrase for you automatically when you start a new wallet.
+A Backup Phrase is 12 randomly created words (a "personal key" to your wallet) that no one must know. 
 
-**The** **Backup Phrase** **is critically important and should be written down and stored in a safe location.**
+When you create a wallet, Plark generates these words and shows them on the screen. 
 
-In the event of phone theft, destruction, or loss, the Backup Phrase can be used to recover your wallet onto a new phone. The key is also required when upgrading your current phone to a new one.
+**It is highly advisable to write them down on a piece of paper because you will not be able to access your wallet if you forget the Backup Phrase.**
 
-To find your Backup Phrase follow these steps:
+It is also of utmost importance to keep the Backup Phase secret. Knowing it, anyone can get access to your wallet. 
 
-1. On the main screen, tap on **Settings**.
+Apart from that, if your phone is lost or seriously damaged you will have to use the Backup Phrase to import your wallet into Plark on a different phone.
+
+You can also find your Backup Phrase in Plark following these steps:
+
+1. Tap **Settings** on the main screen.
 2. Select **Security**.
-3. Tap on **View Backup Phrase**.
-4. **Enter your PIN** and you will be shown your Backup Phrase**.**
+3. Tap **View Backup Phrase**.
+4. **Enter your PIN** and you will be shown your Backup Phrase.
